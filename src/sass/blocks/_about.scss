@@ -1,0 +1,48 @@
+.about {
+    position: relative;
+    margin-top: 100px;
+    .container {
+        display: grid;
+        grid-template-columns: 400px 640px;
+        grid-template-rows: 300px 300px;
+        column-gap: 70px;
+    }
+    .about1 {
+        padding-bottom: 25px;
+    
+    }
+    .divider {
+        margin: 0;
+    }
+    .descr {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        &__sub {
+            padding-top: 15px;
+            font-size: 12px;
+        }
+    }
+
+    .about2   {
+        grid-column-start: 2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 260px 260px;
+        justify-content: space-between;
+    }
+    .subgrid {
+        display: flex;  
+    }
+    .grid-text{
+        margin-left: 20px;
+    }
+    .grid-icon {
+        position: relative;
+        padding: 15px 0 0 5px;
+        @include before_circle;
+        &:before {
+            top: 0;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.resume {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+}
