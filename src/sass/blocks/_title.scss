@@ -1,7 +1,7 @@
 .title {
     font-weight: bold;
     font-size: 36px;
-    line-height: 50px;
+    line-height: 50px;  
     &__about {
         margin-top: 20px;
     }
@@ -17,7 +17,22 @@
         position: relative;
         @include before_circle;
     }
+    &__fs20 {
+        font-size: 20px; 
+        line-height: 30px;
+    }
     &__fs48 {
         font-size: 48px;
     }
 }
+.espp {
+    &__title {
+        text-align: center;
+        &:before {
+            left: 48.4%;
+        }
+    }  
+    &__subtitle {
+        text-align: center; 
+    } 
+}  

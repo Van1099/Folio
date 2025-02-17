@@ -1,10 +1,11 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
-    padding-top: 195px;
+    background: url('../../img/atopodentatus\ scale_2400.png') no-repeat 50%/cover;
+    padding-top: 145px;
     &__title {
         margin-top: 15px;
+        color: #fff;
     }
     &__buttons {
         margin-top: 25px;
@@ -14,7 +15,7 @@
         width: 250px;
     }
     &__link {
-        color: #000;
+        color: #fff;
         font-weight: bold;
         &:hover {
             color: #000;

@@ -1,0 +1,18 @@
+.skills {
+    padding-top: 100px;
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+    
+    }
+    &__item {
+        display: grid;
+        padding: 5px 5px 5px 5px;
+        align-content:space-around;
+        align-self: center;
+    }
+    &__descr {
+        font-size: 12px;
+    }
+}
