@@ -8,14 +8,15 @@
     &__fs14 {
         font-size: 14px;
         line-height: 21px;
+        
     }
     &__fs16 {
-        z-index: 2;
-        left: 10px;
+        /* z-index: 2; */
+        /* left: 10px; */
         font-size: 16px;
         line-height: 24px;
-        position: relative;
-        @include before_circle;
+       /*  position: relative; */
+       /*  @include before_circle; */
     }
     &__fs20 {
         font-size: 20px; 
