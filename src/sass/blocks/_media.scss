@@ -1,0 +1,190 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .sidepanel {
+        display: none;
+    }
+    .about {
+        .container {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+/*         .about2 {
+            grid-template-columns: 220px 214px;
+        } */
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 425px);
+            /* gap: 50px; */
+            justify-content: center;
+        }
+    }
+    .skills {
+        &-grid {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: center;
+        }
+        &__metr {
+            grid-template-columns: repeat(auto-fill, 350px);
+            grid-auto-rows: minmax(70px, auto);
+            justify-content: center;
+        }
+    }
+    .works {
+        &-grid {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            .horizontal, .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+        .workid {
+            grid-template-columns: repeat(auto-fill, 280px);
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            .vertical, .horizontal {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &__about {
+            font-size: 30px;
+        }
+    }
+    .about {
+        .container {
+            grid-template-columns: 300px 440px;
+            column-gap: 20px;
+        }
+        .descr {
+            &__sub {
+                padding-top: 5px;
+            }
+        }
+        .about2 {
+            grid-template-columns: 380px;
+            grid-template-rows: auto;
+        }   
+    }
+    .resume {
+        &__wrapper {
+            gap: 25px;
+        }
+    }
+    .skills {
+        padding-top: 40px;
+    }
+    .pricelist {
+        &-grid {
+            grid-template-columns: repeat(auto-fill, 350px);
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &__fs48 {
+            font-size: 28px;
+        }
+    }
+    .promo {
+        &__title {
+            line-height: 39px;
+            width: 300px;
+        }
+    }
+    .about {
+        margin-top: 40px;
+        .container {
+            grid-template-columns: 1fr;  
+            grid-template-rows: 340px auto auto;
+        }
+        .about1 {
+            padding-top: 25px;
+        }
+        .about2 {
+            grid-column-start: 1;
+            grid-row: 4;
+            grid-template-columns: 260px 260px;
+            gap: 10px;
+            justify-content: center;
+        }
+        .descr {
+            text-align: justify;
+        }
+    }
+    .resume {
+        padding-top: 40px;
+        &__wrapper {
+            gap: 5px;
+        }
+    }
+    .works {
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &__fs48 {
+            font-size: 26px;
+        }
+    }
+    .promo {    
+        &__subtitle {
+            color: #fff;
+        }
+    }
+    .menu {
+        &__block {
+            width: 250px;
+            padding-left: 20px;
+        }
+    }
+    .promo {
+        background: url('../../img/atopodentatus\ scale_2400.png') no-repeat 40%/cover;
+        .hamburger {
+            right: 20px;
+        }
+        &__buttons {
+            margin-top: 30px;
+        }
+    }
+    .about {
+        .about2 {
+            grid-template-columns: 260px;
+            
+        }
+    }  
+    .title {
+        &__about {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    .pricelist {
+        &-grid {
+            grid-template-columns: repeat(auto-fill, 300px);
+        }
+    }
+}

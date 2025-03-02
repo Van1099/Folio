@@ -67,24 +67,23 @@
 			<h1 class="title title__fs48 promo__title">Я хер с горы,<br>ничо не разрабатываю</h1>
 			<div class="promo__buttons">
 				<a href="#" class="promo__link btn">Пыртфэйл</a>
-				<a href="#" class="promo__link">Обо мне</a>
+				<a href="#" class="promo__link">Об мене</a>
 			</div>
 		</div>
 	</section>
 
 	<section class="about">
 		<div class="container">
-			<img src="img/main_photo.jpg" alt="me">
-
-			<about-item class="about1">
+			<div class="about-item"><img src="img/main_photo.jpg" alt="me"></div>
+			<div class="about_item about1">
 				<div class="title title__fs16">Обо мне</div>
 				<div class="title title__about">Меня зовут Кудкудах </div>
 				<div class="divider"></div>
 				<div class="descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum	
 				</div>
-			</about-item>
+			</div>
 
-			<about-item class="about2">
+			<div class="about_item about2">
 				<div class="subgrid">
 					<div class="grid-icon"><img src="icons/about_me/web_development.svg" alt="wd"></div>
 					<div class="grid-text">
@@ -108,7 +107,7 @@
 					</div>
 				</div>
 				
-			</about-item>
+			</div>
 			
 		</div>
 	</section>
@@ -282,7 +281,7 @@
 	</section>
 	<section class="works">
 		<div class="container">
-			<h2 class="title title__fs16 espp__title">Пртфолио</h2>
+			<h2 class="title title__fs16 espp__title">Портфолио</h2>
 			<div class="title espp__subtitle">Мои работы</div>
 			<div class="divider"></div>
 			<div class="works-grid">
@@ -360,7 +359,7 @@
 		</div>
 	</section>
 
-	<section class="contacts">
+<!-- 	<section class="contacts">
 		<div class="container">
 			<div class="contacts__wrapper">
 				<div class="contacts__photo">
@@ -382,11 +381,11 @@
 						<div class="title title__fs14 contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
 						<form action="#" class="contacts__form">
 							<div class="contacts__input">
-								<input name="name" id="name" type="text">
+								<input required name="name" id="name" type="text">
 								<label for="name">Ваше имя</label>
 							</div>
 							<div class="contacts__input">
-								<input name="email" id="email" type="email">
+								<input required name="email" id="email" type="email">
 								<label for="email">Ваша почта</label>
 							</div>
 
@@ -394,7 +393,11 @@
 								<textarea name="text" id="text"></textarea>
 								<label for="text">Ваше сообщение</label>
 							</div>
-							<div><button class="contacts__btn btn">Отправить сообщение</button>
+							<div class="contacts__triggers">
+								<button class="contacts__btn btn">Отправить сообщение</button>
+								<div class="contacts__policy">
+									<input required type="checkbox"><span>Я согласно с <a href="/policy.html">политикой слива моих данных</a> </span>
+								</div>
 							</div>
 							
 						</form>
@@ -402,7 +405,7 @@
 					</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<script src="js/script.js"></script>
 </body>
